@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from 'react';  
+import ListaEmpleados from './components/ListaEmpleados';  
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+function App() {  
+  return (  
+    <div className="container mt-4">  
+      <h1 className="text-center">Listado de Empleados</h1>  
+      <ListaEmpleados />  
+    </div>  
+  );  
+}  
+
+export default App;
